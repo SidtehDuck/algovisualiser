@@ -2,10 +2,10 @@
 #include<stdlib.h>
 #include<string.h>
 #include<GL/glut.h>
-#include "InsertionSort.h"
-#include "RecursiveBubbleSort.h"
-#include "SelectionSort.h"
-#include "Bubble_Sort.h"
+#include"InsertionSort.h"
+#include"SelectionSort.h"
+#include"Bubble_Sort.h"
+#include"RecursiveBubbleSort.h"
 
 int SORT_NO= 4;	    // Number of sorting algorithms
 int SPEED= 700;	    // Speed of sorting, must be greater than MAX always
@@ -142,13 +142,13 @@ void display()
 	glFlush();
 }
 
-void bubblesort(int a, int MAX){}
-void insertionsort(int a, int MAX){}
-void selectionsort(int a, int MAX){}
-void recursivebubblesort(int a, int MAX){}
+// void bubblesort(int a, int MAX){}
+// void insertionsort(int a, int MAX){}
+// void selectionsort(int a, int MAX){}
+// void recursivebubblesort(int a, int MAX){}
 
 // Timer Function, takes care of sort selection
-void makedelay(int)
+void makedelay() //pass 'int' as argument here if on windows
 {
 	if(sorting)
 	{
